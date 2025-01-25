@@ -8,6 +8,11 @@ import LoginScreen from "./screens/Login";
 import HomeScreen from "./screens/Home";
 import SignUpScreen from "./screens/SignUp";
 import ProfileScreen from "./screens/Profile";
+import Calculator from "./screens/calculator";
+import BusinessLoans from "./screens/BusinessLoans";
+import WeddingLoans from "./screens/WeddingLoans";
+import eduLoans from "./screens/eduLoans";
+import Startups from "./screens/Startups";
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -26,6 +31,14 @@ function AppStack() {
     <Drawer.Navigator>
       <Drawer.Screen name="Home" component={HomeScreen} />
       <Drawer.Screen name="Profile" component={ProfileScreen} />
+      <Drawer.Screen name="Calculator" component={Calculator} />
+      <Drawer.Screen name="Business Loan" component={BusinessLoans} />
+      <Drawer.Screen name="Wedding Loan" component={WeddingLoans} />
+      <Drawer.Screen name="Education Loan" component={eduLoans} />
+      <Drawer.Screen name="Startup Loan" component={Startups} />
+
+
+
     </Drawer.Navigator>
   );
 }
